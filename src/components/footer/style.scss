@@ -1,0 +1,30 @@
+@import "../../style-config/mixins.scss";
+@import "../../style-config/variable.scss";
+
+.footer {
+    padding-bottom: 0;
+}
+
+.footer-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .footer-menu-items {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        .footer-menu-item {
+            @include typography(18px, 400, 22px);
+            color: white;
+            margin: 0 12.5px;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}
